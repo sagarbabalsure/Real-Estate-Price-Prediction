@@ -39,7 +39,7 @@ def predict_estimated_price():
 		# print(result['estimated_price'])
 		return render_template('form.html', price=result['estimated_price'])
 	
-	return render_template('form.html')
+	return render_template('form.html', locations=utils.get_location_names())
 
 if __name__=="__main__":
 	print("starting flask server...")
