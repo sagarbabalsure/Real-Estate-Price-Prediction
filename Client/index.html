@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Real Estate Home</title>
+	<style>
+		.btn {
+            background-color: brown;
+            border: 2px solid black;
+            border-radius: 10px;
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            display: inline-block;
+            font-size: 20px;
+            margin: 10px 30px;
+            cursor: pointer;
+            text-decoration:none;
+            margin-left: 40%;
+            margin-bottom: 50px;
+        }
+        .btn:hover{
+        	font-size: 22px;
+        	color: cyan;
+        }
+		body{
+			background-image: url('Client/home.jpg');
+			background-size:     cover;                      /* <------ */
+		    background-repeat:   no-repeat;
+		    background-position: center center;
+		}
+	* {
+	  box-sizing: border-box;
+	}
+	h1{
+		margin-left: 30%;
+		margin-top: 10%;
+	}
+
+	/* Create three equal columns that floats next to each other */
+	.card {
+	  float: left;
+	  width: 32%;
+	  padding: 10px;
+	  height: 280px; /* Should be removed. Only for demonstration */
+	  border-style: solid;
+	  margin: 5px;
+	  background-color: cyan;
+	  border-radius: 15px;
+	}
+
+	/* Clear floats after the columns */
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	  margin-left: 20px;
+	}
+</style>
+</head>
+<body>
+	<h1>"Know The Price At Your Location"</h1>
+	<a class="btn" href="{{url_for('form') }}">Click Here For Estimated Price</a>
+	<div class="row">
+		<div class="card">
+		  <div class="card-body">
+		  	<h2><p>Location: Balaji Nagar</p>
+		  	<p>BHK: 3</p>
+		  	<p>Area: 2000 sqft</p>
+		    <p class="card-text">Estimated Price: 100 Lac</p></h2>
+		  </div>
+		</div>
+		<div class="card">
+		 <div class="card-body">
+		 	<h2><p>Location: Electronics city phase 1</p>
+		  	<p>BHK: 3</p>
+		  	<p>Area: 3000 sqft</p>
+		    <p class="card-text">Estimated Price: 202.51 Lac</p></h2>
+		  </div>
+		</div>
+		<div class="card">
+		  <div class="card-body">
+		    <h2><p>Location: Neharu Nagar</p>
+		  	<p>BHK: 4</p>
+		  	<p>Area: 2500 sqft</p>
+		    <p class="card-text">Estimated Price: 163.64 Lac</p></h2>
+		  </div>
+		</div>
+	</div>
+	<div class="about">
+		<h1>What is Real Estate Price Prediction?</h1>
+		<h2><p>This is small project where we try to predict the price of houses based on some criterias like:
+			<ul>
+				<li>Location</li>
+				<li>BHK</li>
+				<li>Bathroom</li>
+				<li>Area(square feet)</li>
+			</ul>
+		</p>
+		</h2><
+	</div>
+</body>
+</html>
